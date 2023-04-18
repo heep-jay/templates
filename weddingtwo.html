@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Alegreya+SC&family=EB+Garamond&family=Lustria&family=Parisienne&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      .wed {
+        width: 100%;
+        height: 100%;
+
+        border-radius: 5px;
+        border: 0.5px solid #ffb0c8;
+        background: url("./assets/wedding2.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .wed-container {
+        width: 60%;
+        height: 100%;
+        margin: auto auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .wed-container p,
+      .wed-you {
+        text-align: center;
+        font-size: clamp(0.5rem, 0.4412rem + 0.4706vw, 1rem);
+      }
+
+      .wed-names {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-weight: 700;
+        font-size: clamp(0.625rem, -0.1654rem + 1.8235vw, 2rem);
+      }
+
+      .wed-calendar {
+        display: flex;
+        align-items: baseline;
+        gap: 2rem;
+      }
+
+      .weekday {
+        padding: 1rem 0.5rem;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        font-weight: 600;
+        font-size: clamp(0.5rem, 0.6912rem + 0.4706vw, 1.05rem);
+      }
+      .wed-date {
+        font-size: clamp(0.5rem, 0.6912rem + 0.4706vw, 1.25rem);
+        font-weight: 600;
+      }
+      .wed-p {
+        text-align: center;
+        font-size: clamp(0.5rem, 0.4632rem + 0.2941vw, 0.8125rem);
+      }
+      .wed-address {
+        text-align: center;
+        font-size: clamp(0.5rem, 0.4632rem + 0.2941vw, 0.8125rem);
+      }
+
+      @media screen and (max-width: 500px) {
+        .wed-container {
+          gap: 1rem;
+          /* height: 50%; */
+        }
+        .weekday {
+          padding: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wed">
+      <div class="wed-container">
+        <p>[1]</p>
+
+        <div class="wed-names">
+          <div class="husband">[2]</div>
+          <p>&</p>
+          <div class="wife">[3]</div>
+        </div>
+        <div class="wed-you">[4]</div>
+        <div class="wed-calendar">
+          <div class="weekday">[5]</div>
+          <div class="wed-date">
+            <div class="wed-month">[6]</div>
+            <div class="wed-no">[7]</div>
+            <div class="wed-year">[8]</div>
+          </div>
+          <div class="weekday">[8]</div>
+        </div>
+        <div class="wed-p">[9]</div>
+        <div class="wed-address">[10]</div>
+      </div>
+    </div>
+  </body>
+</html>

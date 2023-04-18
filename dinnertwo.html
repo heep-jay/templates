@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+      @import url("https://fonts.googleapis.com/css2?family=Alegreya+SC&family=EB+Garamond&family=Lustria&family=Parisienne&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        /* font-family: Roboto, "Helvetica Neue", sans-serif; */
+      }
+
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      .dinner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: url("./assets/dinner.jpg");
+        /* background-color: black; */
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .dinner-container {
+        height: 80%;
+        width: 80%;
+        background: #fff;
+        padding: 1rem;
+        margin: auto;
+        text-align: center;
+      }
+      .dinner-inner {
+        border: 2px solid gold;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+      }
+      .dinner-text,
+      .dinner-amp {
+        text-align: center;
+        font-size: clamp(0.5rem, 0.2059rem + 2.3529vw, 3rem);
+      }
+      .dinner-header,
+      .dinner-date,
+      .dinner-address {
+        font-size: clamp(0.4375rem, 0.3566rem + 0.6471vw, 1.125rem);
+      }
+      .dinner-address {
+        width: 80%;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .bracket {
+        font-size: clamp(0.4375rem, 0.364rem + 0.5882vw, 0.70625rem);
+      }
+
+      @media screen and (max-width: 500px) {
+        .dinner-inner {
+          gap: 0.8rem;
+        }
+        .dinner-container {
+          height: 90%;
+          width: 90%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dinner">
+      <div class="dinner-container">
+        <div class="dinner-header">[1]</div>
+        <div class="dinner-title">
+          <div class="dinner-text">[2]</div>
+          <div class="dinner-amp">[3]</div>
+          <div class="dinner-text">[4]</div>
+        </div>
+        <div class="dinner-header">[5]</div>
+        <div class="dinner-date">[6]</div>
+        <div class="dinner-time">[7]</div>
+        <div class="dinner-address">[8]</div>
+        <div class="dinner-rsvp">[9]</div>
+      </div>
+    </div>
+  </body>
+</html>
